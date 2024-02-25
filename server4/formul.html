@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>market space</title>
+</head>
+<body>
+    <div style="background-color: #557ef782; padding: 20px;">
+    <form action="/" method="post">
+    <fieldset style="background-color: #557ef782;">
+        <legend><b>Inscription</b></legend>
+          <fieldset style="background-color: #f7605595;"><legend><b>Informations</b></legend>
+            <table>
+             <tr>
+                <td><label for="name">Nom :</label></td>
+                <td> <input type="text" id="name"  name="name" required> </td>
+             </tr>
+             <tr>
+                <td> <label for="familyname">Prénom :</label></td>
+                <td><input type="text" id="familyname" name="fname" required></td>
+             </tr>
+             <tr>
+                <td><label for="Adress">Adresse</label></td>
+                <td><input type="text" id="Adress" name="Adress"></td>
+             </tr>
+             <tr>
+                <td><label for="phone">Téléphone:</label></td>
+                <td><input type="tel" id="phone" required maxlength="10" name="tel"></td>
+             </tr>
+             <tr>
+                <td><label for="mail">Courrier éléctonique</label></td>
+                <td><input type="email" id="mail" required placeholder="nom@gmail.com" name="text"></td>
+             </tr>
+            </table>
+          </fieldset>
+        <fieldset style="background-color: #7ef75582;"><legend><b>Paiement par carte</b></legend>
+          <label for="Yes">Oui</label>
+          <input type="radio" id="Yes" value="Yes" name="choice"><br>
+          <label for="No">Non</label>
+          <input type="radio" id="No" value="No" name="choice">
+        </fieldset>  
+        <fieldset style="background-color: #b455f793;"><legend><b>Commande</b></legend>
+            <table>
+            <tr><td><label for="ID Product">ID produit :</label></td>
+                <td><input type="number" id="ID Product" required min="0" name="number"></td></tr>
+          <tr><td><label for="Quantity">Quantité :</label></td>
+            <td><input type="number" id="Quantity" required min="0" name="Quantity"></td></tr>
+          <tr><td>Couleur</td>
+            <td> <label for="blue">Blue</label><input type="radio" id="blue" value="blue" name="color" checked>
+                <label for="green">Green</label><input type="radio" id="green" value="green" name="color">
+                <label for="red">Red</label><input type="radio" id="red" value="red" name="color"></td></tr>
+          <tr><td><label for="date">Date et heure de reception</label></td>
+            <td> <input type="datetime-local" id="date" name="date"></td></tr>
+        </table> 
+        </fieldset><br>
+        <input type="submit" value="Valider" style="background-color: #18a711d3; border:none;color:white; border-radius:4px;">
+        <input type="reset" value="Effacer et recommencer" style="background-color: #e31f14d3;color:white; border:none; border-radius:4px;">
+    </fieldset>
+    </form>
+    </div>
+</body>
+</html>
