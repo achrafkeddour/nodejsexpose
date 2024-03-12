@@ -6,7 +6,7 @@ const a = fs.readFileSync('file.html', 'UTF-8');
 
 // Création du serveur HTTP
 const server = http.createServer((req, res) => {
-  res.write(a); // affichage de contenu de frontend 
+  res.write(a); // affichage de contenu de frontend .. essayi na7iha wchof resultat
   res.end('<p>bonjour du cote serveur (nodejs)! </p> ');
 //   
 });
